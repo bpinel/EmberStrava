@@ -3,48 +3,20 @@
 </div>
 <div>
 	<h3>Vélos</h3>
-	<table id="cycles">
-  		<tr>
-   			<th>Name</th>
-    		<th>Distance</th>		
-    		<th>Principal</th>
-  		</tr>
-  		{{#each model.bikes as |bike|}}
-  			 <tr>
-    			<td>{{bike.name}}</td>
-    			<td>{{bike.distance}}</td>		
-    			<td>
-    				{{#if bike.primary}} 
-    					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-    				{{else}} 
-    					<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-    				{{/if}}
-    			</td>
-  			</tr>
-		{{/each}}
-	</table>
+	        {{models-table
+            data=bikeContent
+            columns=bikeColumns
+            useNumericPagination=true
+            pageSize=10
+        }}
 </div>
 <div>
 	<h3>Chaussures</h3>
-	<table id="shoes">
-  		<tr>
-   			<th>Name</th>
-    		<th>Distance</th>		
-    		<th>Principal</th>
-  		</tr>
-  		{{#each model.shoes as |shoe|}}
-  			 <tr>
-    			<td>{{shoe.name}}</td>
-    			<td>{{shoe.distance}}</td>		
-    			<td>
-    				{{#if shoe.primary}} 
-    					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-    				{{else}} 
-    					<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-    				{{/if}}
-    			</td>
-  			</tr>
-		{{/each}}
-	</table>
+        {{models-table
+            data=shoeContent
+            columns=shoeColumns
+            useNumericPagination=true
+            pageSize=10
+        }}
 </div>
 	
