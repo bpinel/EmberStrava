@@ -7,7 +7,6 @@ export default Ember.Route.extend({
   			url: "https://www.strava.com/api/v3/athlete?access_token="+token+"&callback=?",
   			dataType: "jsonp", 
   			
-  			success: function(data) {console.log(data);},
   			error: function(xhr, status, error) {
         		console.log("Error");
         		console.log(xhr.statusText);
