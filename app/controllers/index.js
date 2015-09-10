@@ -44,7 +44,7 @@ export default Ember.Controller.extend({
 
   shoeContent: Ember.computed(function() {
     return this.get("model").shoes;
-  }),
+  })
 
 
 });
