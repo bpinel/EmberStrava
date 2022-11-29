@@ -1,3 +1,7 @@
+# Github Pages setup for test
+
+Makes it happen
+
 # Ember-strava
 
 This README outlines the details of collaborating on this Ember application.
